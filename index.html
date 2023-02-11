@@ -5,39 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfafolio FTC</title>
+    <!-- BSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <!-- CUSTOM FONTS -->
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
+    <div class="menu-btn">
+        <i class="bi bi-list-ul"></i>
+    </div>
     <header>
         <div class="container">
-            <nav>
-                <a href="#">
-                    link uno
-                </a>
-                <a href="#">
-                    link dos
-                </a>
-                <a href="#">
-                    link tres
-                </a>
+            <nav class="nav-main">
+                <img src="https://imgs.search.brave.com/5p6fAQhmuLgmp9cTXw3nflPGrNQmToGhenzNFsKt28s/rs:fit:480:363:1/g:ce/aHR0cDovL3RyYWlu/aW5nLmthbnNoZWlu/Zm90ZWNoLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxNi8x/Mi9xYS10ZXN0aW5n/MS0xLnBuZw" alt="">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#">Experiencia Laboral</a>
+                    </li>
+                    <li>
+                        <a href="#">Certificaciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#">Redes</a>
+                    </li>
+                </ul>
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <section class="firstSection">
-        <h1>Bienvenido a la compilacion de proyectos y/o informacion sobre mi <br> Contactame</h1>
-        <button>Contactar</button>
+        <img src="./img/profile.jpg" alt="" class="perfil">
+        <div class="sectionContainer">
+            <h1>Bienvenido a mi pagina portafolio</h1>
+        </div>
     </section>
 
     <section class="secondSection">
         <div class="container">
             <div class="img-container"></div>
-            <h2>informacion</h2>
+            <h2>Informacion</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos nemo totam impedit sapiente maxime excepturi qui distinctio nobis laboriosam.</p>
         </div>
     </section>
 
     <section class="ExperienciaLaboral">
+        <h2>Experiencia Laboral</h2>
         <div class="container">
             <ul>
                 <li>Empresa 1</li>
@@ -61,19 +90,19 @@
         <div class="container">
             <h1>Proyectos</h1>
             <div class="carta">
-                <h2></h2>
+                <h2>Proyecto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum.</p>
                 <button>Codigo</button>
                 <button>Pagina</button>
             </div>
             <div class="carta">
-                <h2></h2>
+                <h2>Proyecto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum.</p>
                 <button>Codigo</button>
                 <button>Pagina</button>
             </div>
             <div class="carta">
-                <h2></h2>
+                <h2>Proyecto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum.</p>
                 <button>Codigo</button>
                 <button>Pagina</button>
@@ -91,5 +120,6 @@
             &copy; FTC 2023
         </div>
     </footer>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
