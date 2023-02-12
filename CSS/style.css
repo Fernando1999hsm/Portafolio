@@ -11,10 +11,11 @@ p{font-size: 1.5em; font-family: 'Comfortaa', cursive;}
 button{font-family: 'Comfortaa', cursive;}
 ul{list-style: none;}
 li{font-family: 'Comfortaa', cursive;}
-.landingPage{
+body{
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 50px;
+    height: 40rem;
     background-color: #000000;
     width: 100%;
     margin: auto;
@@ -82,6 +83,108 @@ header .container{
     font-size: 5rem;
     padding-left: 50px;
 }
+/*Sobre mi*/
+.AboutMe{
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding: 1rem 1rem;
+    display:grid;
+    width: 90%;
+    background-image: url('https://images.pexels.com/photos/7225266/pexels-photo-7225266.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+.AboutMe img{
+    width: 6rem;
+    height: 5rem;
+}
+.AboutMe p{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: blueviolet;
+    font-weight:bold;
+    font-size: 2rem;
+}
+/*Slider de trabajos*/
+.work{
+    width: 100%;
+    height: 30rem;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+}
+div#slider { 
+    overflow: hidden; 
+    padding-top: 3rem;
+}
+div#slider figure div { 
+    width: 20%; 
+    float: left; 
+    height: 30rem;
+}
+div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+}
+/*Primer*/
+.primerSlide{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.primerSlide img{
+    width: 15rem;
+    height: 10rem;
+}
+.primerSlide p{
+    color: white;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+/*Segundo*/
+.segundoSlide{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.segundoSlide img{
+    width: 10rem;
+    height: 10rem;
+}
+.segundoSlide p{
+    color: white;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+/*Tercer*/
+.tercerSlide{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.tercerSlide img{
+    width: 15rem;
+    height: 10rem;
+}
+.tercerSlide p{
+    color: white;
+    font-size: 2rem;
+    padding-left: 20px;
+}    
 @media(max-width:1000px) {
     .menu-btn{
         display: block;
@@ -95,7 +198,7 @@ header .container{
         top: 0;
         left: 0;
         background: #2f3640;
-        height: 100%;
+        height: 50%;
         padding: 30px;
         opacity: .9;
         transform: translateX(-400px);
@@ -113,6 +216,6 @@ header .container{
         padding-top: 10px;
     }
     .Welcome h1{
-        font-size: 3rem;
+        font-size: 2.9rem;
     }
 }
